@@ -1,3 +1,9 @@
 ## 基础模版
 
-vue3-vite-less-vrouter-elementplus-pinia-axios
+vue 3.3
+vite 4.5
+less
+vue-router 4.2
+elementplus
+pinia
+axios
