@@ -1,6 +1,5 @@
 node_modules
 .DS_Store
 example
-docs
 demo
 pnpm-lock.yaml
