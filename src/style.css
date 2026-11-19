@@ -1,8 +1,61 @@
+/* ==================== 全局基础样式（现代化浅色主题） ==================== */
+
+/* 全局 CSS 变量：统一主题色与中性色，方便后续换肤 */
 :root {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* 页面背景色 */
+  --app-bg: #f5f7fb;
+  /* 主文字颜色 */
+  --app-text: #303133;
+  /* 次要文字颜色 */
+  --app-text-secondary: #909399;
+  /* 卡片背景色 */
+  --app-card-bg: #ffffff;
+  /* 卡片圆角 */
+  --app-radius: 12px;
+  /* 卡片阴影 */
+  --app-shadow: 0 4px 16px rgba(30, 41, 59, 0.06);
 }
 
+/* 盒模型统一为 border-box，避免 padding 撑破布局 */
+* {
+  box-sizing: border-box;
+}
+
+/* 页面主体：浅色背景 + 默认文字样式 */
 body {
   margin: 0;
+  background-color: var(--app-bg);
+  color: var(--app-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 通用页面容器：独立页面 / 子路由页面共用 */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 通用页面卡片 */
+.page-card {
+  border-radius: var(--app-radius);
+  border: none;
+}
+
+/* 卡片头部：标题 + 标签 左右布局 */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+/* 页面描述文字 */
+.page-desc {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--app-text-secondary);
 }

@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{o as t,c}from"./index-58a75acc.js";const o={};function r(n,a){return t(),c("div",null,"模版一子路由")}const l=e(o,[["render",r]]);export{l as default};
