@@ -1,0 +1,7 @@
+allowBuilds:
+  esbuild: true
+  vue-demi: true
+# pnpm 12 的配置迁移到本文件（package.json 的 pnpm 字段已不再读取）
+# pnpm 12 默认禁止依赖执行安装脚本，此处放行：
+# - esbuild：Vite 构建所需的平台二进制
+# - vue-demi：Pinia 依赖，安装时切换 Vue2/Vue3 代码

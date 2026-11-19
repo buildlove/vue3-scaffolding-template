@@ -1,0 +1,1 @@
+.layouts{display:flex;height:100vh;flex-direction:column}.layouts-header{height:57px;line-height:60px;padding-left:60px;color:#fff;background-color:#3b82f6}.layouts-wrapper{display:flex;height:100%}.layouts-menu{width:280px;height:100%;display:flex;align-items:center;justify-content:center;flex-shrink:0;background-color:#f87171;font-size:22px}.layouts-main{width:100%}
